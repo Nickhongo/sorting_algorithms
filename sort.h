@@ -33,5 +33,9 @@ void shell_sort(int *array, size_t size);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void merge(int *array, int *left, int *right, size_t s_l, size_t s_r);
+void swap(int *a, int *b);
+void quick_sort(int *array, size_t size);
+size_t lomuto_partition(int *array, size_t s, size_t lower_b, size_t upper_b);
+void quick_sort_partition(int *array, size_t s, size_t lower_b, size_t upper_b);
 
 #endif /* SORT_H */
