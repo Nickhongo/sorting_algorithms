@@ -12,7 +12,7 @@ void merge_sort(int *array, size_t size)
 	int i, j = 0, mid, *left, *right;
 	size_t size_l, size_r;
 
-	if (size <= 1)
+	if (array == NULL || size <= 1)
 	{
 		return;
 	}

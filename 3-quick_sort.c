@@ -11,6 +11,10 @@ void quick_sort(int *array, size_t size)
 {
 	size_t lb, ub;
 
+	if (array == NULL || size < 2)
+	{
+		return;
+	}
 	lb = 0;
 	ub = size - 1;
 	quick_sort_partition(array, size, lb, ub);
